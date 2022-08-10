@@ -1,10 +1,20 @@
 name: "RabbitMQ"
 description: "Rabbit message queue"
-version: "3.10.3"
+version: "3.10.4"
 slug: "rabbitmq"
 init: true
-network:
-  host_network: true
+ingress: true
+ingress_port: 0
+ingress_stream: true
+ports:
+  80/tcp: 1880
+ports_description:
+  80/tcp: Web interface
+hassio_api: true
+hassio_role: manager
+homeassistant_api: true
+host_network: true
+auth_api: true
 arch:
   - aarch64
   - amd64
