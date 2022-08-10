@@ -1,13 +1,13 @@
 name: "RabbitMQ"
 description: "Rabbit message queue"
-version: "3.10.4"
+version: "3.10.5"
 slug: "rabbitmq"
 init: true
 ingress: true
 ingress_port: 0
 ingress_stream: true
 ports:
-  80/tcp: 1880
+  80/tcp: 15672
 ports_description:
   80/tcp: Web interface
 hassio_api: true
