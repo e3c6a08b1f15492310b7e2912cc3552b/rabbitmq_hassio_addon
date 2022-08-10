@@ -1,8 +1,8 @@
-name: "Hello world"
-description: "My first real add-on!"
-version: "1.0.0"
-slug: "hello_world"
-init: false
+name: "RabbitMQ"
+description: "Rabbit message queue"
+version: "3.10.0"
+slug: "rabbitmq"
+init: true
 arch:
   - aarch64
   - amd64
