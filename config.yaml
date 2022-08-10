@@ -1,8 +1,10 @@
 name: "RabbitMQ"
 description: "Rabbit message queue"
-version: "3.10.0"
+version: "3.10.1"
 slug: "rabbitmq"
 init: true
+network:
+  15672/TCP: The management port
 arch:
   - aarch64
   - amd64
