@@ -3,9 +3,6 @@ description: "Rabbit message queue"
 version: "management-alpine"
 slug: "rabbitmq"
 init: true
-ingress: true
-ingress_port: 15672
-ingress_stream: true
 map:
   - share
   - config
