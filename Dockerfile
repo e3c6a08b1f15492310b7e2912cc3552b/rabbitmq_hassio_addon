@@ -1,4 +1,4 @@
-FROM rabbitmq:management
+FROM rabbitmq:management-alpine
 
 LABEL \
   io.hass.version="VERSION" \
