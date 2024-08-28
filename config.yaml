@@ -1,6 +1,6 @@
 name: "RabbitMQ"
 description: "Rabbit message queue"
-version: "management"
+version: "management-alpine"
 slug: "rabbitmq"
 init: true
 ingress: true
