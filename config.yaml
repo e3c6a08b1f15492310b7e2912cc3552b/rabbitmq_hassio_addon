@@ -6,12 +6,17 @@ init: true
 ingress: true
 ingress_port: 15672
 ingress_stream: true
+map:
+  - share
+  - config
 ports:
-  15672/tcp: 15672
-  15692/tcp: 15692
+  - 5672/tcp: 5672
+  - 15672/tcp: 15672
+  - 15692/tcp: 15692
 ports_description:
-  15672/tcp: Management HTTP (non-TLS)
-  15692/tcp: Prometheus metrics HTTP (non-TLS)
+  - 5672/tcp: AMQP listener
+  - 15672/tcp: Management HTTP (non-TLS)
+  - 15692/tcp: Prometheus metrics HTTP (non-TLS)
 arch:
   - aarch64
   - amd64
