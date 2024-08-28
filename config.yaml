@@ -10,11 +10,9 @@ map:
   - share
   - config
 ports:
-  - 5672/tcp: 5672
   - 15672/tcp: 15672
   - 15692/tcp: 15692
 ports_description:
-  - 5672/tcp: AMQP listener
   - 15672/tcp: Management HTTP (non-TLS)
   - 15692/tcp: Prometheus metrics HTTP (non-TLS)
 arch:
